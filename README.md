@@ -2,14 +2,187 @@
 VPN Cheat Sheet with the most needed stuff..
 
 
-# Nordvpn
 
 <br><br>
+
+
+# Nordvpn
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+____________________________________________________________
+<br><br>
+
+
 
 ## Server
 - https://nordvpn.com/de/servers/tools/?_ga=2.77794711.2041510557.1610927844-1299169374.1610927844
 
 <br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+____________________________________________________________
+<br><br>
+
+# openvpn (https://support.nordvpn.com/Connectivity/Linux/1047409422/How-can-I-connect-to-NordVPN-using-Linux-Terminal.htm)
+
+1. Disbale IPV6
+
+<br>
+
+2. Install OpenVPN
+```bash
+sudo apt-get install openvpn
+```
+
+<br>
+
+3. Navigate to the OpenVPN configuration directory with the command:
+- cd /etc/openvpn
+
+<br>
+
+4. Download the OpenVPN configuration files with the command:
+```bash
+sudo wget https://downloads.nordcdn.com/configs/archives/servers/ovpn.zip
+```
+
+<br>
+
+In case you get ERROR: The certificate of `nordvpn.com’ is not trusted., install the ca-certificates package with the command:
+```bash
+sudo apt-get install ca-certificates
+```
+
+<br>
+
+5. If you do not have the unzip package installed, download it by typing:
+```bash
+sudo apt-get install unzip
+```
+
+<br>
+
+6. Extract ovpn.zip with the command:
+```bash
+sudo unzip ovpn.zip
+```
+
+<br>
+
+7. Remove the files you will no longer use:
+```bash
+sudo rm ovpn.zip
+```
+
+
+
+<br>
+
+
+8. Enter the directory where the server configurations are located. These folders are named either ovpn_udp or ovpn_tcp:
+- cd /etc/openvpn/ovpn_udp/
+- cd /etc/openvpn/ovpn_tcp/
+ 
+ 
+<br> 
+ 
+ 
+9. To see the list of all available servers, enter the following command:
+```bash
+ls -al
+```
+
+
+<br>
+
+Choose a server to connect to. For this tutorial, we used us2957.nordvpn.com, but you should connect to the server suggested to you at  https://nordvpn.com/servers/tools/. You can find the server hostname right under the server title.
+
+
+<br>
+
+10. Start OpenVPN with a chosen configuration by entering:
+```bash
+sudo openvpn [file name]
+sudo openvpn us2957.nordvpn.com.udp.ovpn
+sudo openvpn /etc/openvpn/ovpn_udp/us2957.nordvpn.com.udp.ovpn
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+____________________________________________________________
+<br><br>
+
+
 
 ## Linux
 
@@ -17,6 +190,10 @@ VPN Cheat Sheet with the most needed stuff..
 ```bash
 sh <(curl -sSf https://downloads.nordcdn.com/apps/linux/install.sh)
 ```
+
+
+
+
 
 <br><br>
 
