@@ -3,30 +3,18 @@ VPN Cheat Sheet with the most needed stuff..
 
 
 
+
+
+
+
+
+
+
+
 <br><br>
 
 
 # Nordvpn
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -63,7 +51,7 @@ ____________________________________________________________
 ____________________________________________________________
 <br><br>
 
-# openvpn (https://support.nordvpn.com/Connectivity/Linux/1047409422/How-can-I-connect-to-NordVPN-using-Linux-Terminal.htm)
+## openvpn (https://support.nordvpn.com/Connectivity/Linux/1047409422/How-can-I-connect-to-NordVPN-using-Linux-Terminal.htm)
 
 1. Disbale IPV6
 
@@ -149,15 +137,23 @@ sudo openvpn /etc/openvpn/ovpn_udp/us2957.nordvpn.com.udp.ovpn
 
 
 
+<br><br><br><br>
 
 
 
 
+#### Auto sign-in
 
+1. Create txt file and place it anywhere with this layout:
+```bash
+username
+password
+```
 
-
-
-
+2. Open up your .ovpn in your favourite text editor and enter the following line:
+```bash
+auth-user-pass /location/pass.txt
+```
 
 
 
