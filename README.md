@@ -253,3 +253,35 @@ nordvpn logout - Log out.
 
 nordvpn help or nordvpn h - See the list of available commands or help for a specific command.
 ```
+
+
+
+<br><br>
+
+
+## Known Problem
+
+
+
+<br><br>
+
+
+#### Internet not working after uninstalling Nordvpn
+```bash
+sudo gedit /etc/NetworkManager/NetworkManager.conf
+
+# Add to main section
+[main]
+rc-manager=unmanaged
+
+
+sudo gedit /etc/resolv.conf
+
+# Add those nameserver or google DNS 8.8.8.8
+nameserver 103.86.96.100
+nameserver 103.86.99.100
+
+sudo systemctl restart NetworkManager.service
+# Check if internet is working
+ping -c2 google.com
+```
