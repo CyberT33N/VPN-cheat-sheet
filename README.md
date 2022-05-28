@@ -30,7 +30,12 @@ ____________________________________________________________
 
 <br><br>
 
+# VPN example
+```
+# double vpn - UDP - netherlands -> switzerland
+sudo openvpn /etc/openvpn/ovpn_udp/nl-ch10.nordvpn.com.udp.ovpn
 
+```
 
 
 
