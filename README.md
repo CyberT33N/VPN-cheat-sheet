@@ -203,6 +203,17 @@ sh <(curl -sSf https://downloads.nordcdn.com/apps/linux/install.sh)
 
 
 
+<br><br>
+
+#### Connect
+```bash
+# Checz Republic
+nordvpn c cz
+
+# Germany
+nordvpn c de
+```
+
 
 
 <br><br>
