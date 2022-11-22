@@ -302,3 +302,11 @@ sudo systemctl restart NetworkManager.service
 # Check if internet is working
 ping -c2 google.com
 ```
+
+
+
+<br><br>
+
+
+#### Regular timeouts to l2tp VPN
+- For me it worked to activate the guest WLAN in my Router. There is any missconfiguration in my FritzBox for my main Internet.
