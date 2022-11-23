@@ -273,6 +273,76 @@ nordvpn help or nordvpn h - See the list of available commands or help for a spe
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+_______________________________________________________________________
+
+<br><br>
+
+
+# NetworkManager
+
+<br><br>
+
+## Config File
+- /etc/NetworkManager/system-connections
+  - In this folder you can find the config files for all of your connections
+
+## Auto Reconnect
+```
+[connection]
+autoconnect=true
+autoconnect-retries=0
+
+[vpn]
+persistent=true
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+_______________________________________________________________________
+
 <br><br>
 
 
