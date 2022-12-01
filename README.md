@@ -337,7 +337,13 @@ _______________________________________________________________________
 
 # DNS
 
-## Hostnames
+<br><br>
+
+## DNS over TLS
+
+<br><br>
+
+### Hostnames
 dns2.nordvpn.com
 dns1.nordvpn.com
 
