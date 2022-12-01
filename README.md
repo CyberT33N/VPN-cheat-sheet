@@ -329,6 +329,27 @@ persistent=true
 
 
 
+<br><br>
+_______________________________________________________________________
+
+<br><br>
+
+
+# DNS
+
+## Hostnames
+dns2.nordvpn.com
+dns1.nordvpn.com
+
+
+
+
+
+
+
+
+
+
 
 
 
