@@ -37,6 +37,11 @@ sudo openvpn /etc/openvpn/ovpn_udp/nl-ch10.nordvpn.com.udp.ovpn
 
 ```
 
+## List
+```
+ua - ukraine
+```
+
 
 
 
