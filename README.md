@@ -32,6 +32,7 @@ _____________________________________
 
 
 ## Double VPN
+
 ```
 ca-us63.nordvpn.com
 ca-us64.nordvpn.com
@@ -118,6 +119,10 @@ Double-VPN Servers: 80
 ```
 
 
+### Random double vpn
+```shell
+nordvpn connect --group double_vpn
+```
 
 
 
