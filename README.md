@@ -19,6 +19,8 @@ _____________________________________
 
 # Nordvpn
 
+
+
 ## API
 - https://sleeplessbeastie.eu/2019/02/18/how-to-use-public-nordvpn-api/
 
@@ -122,6 +124,7 @@ Double-VPN Servers: 80
 ### Random double vpn
 ```shell
 nordvpn connect --group double_vpn
+nordvpn c --group double_vpn
 ```
 
 
@@ -384,7 +387,10 @@ nordvpn help or nordvpn h - See the list of available commands or help for a spe
 
 
 
-
+## groups
+```shell
+nordvpn groups
+```
 
 
 
