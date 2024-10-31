@@ -278,9 +278,9 @@ password
 
 2. Open up your .ovpn in your favourite text editor and enter the following line:
 ```bash
-auth-get-token
 auth-user-pass /location/pass.txt
 ```
+- ~ tilde not allowed use absolute path starting with /home/username/..
 
 
 
