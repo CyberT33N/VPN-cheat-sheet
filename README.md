@@ -171,6 +171,18 @@ ____________________________________________________________
 
 ## openvpn (https://support.nordvpn.com/Connectivity/Linux/1047409422/How-can-I-connect-to-NordVPN-using-Linux-Terminal.htm)
 
+
+## ufw
+- If you are deny outgoing traffic for default then do this:
+```
+sudo ufw allow out on tun0
+sudo ufw allow out 1194/udp
+```
+
+<br><br>
+
+
+## Step by step Ubuntu
 **In order to use OpenVPN with NordVPN server make sure to get service credentials by login in to nordvpn.com > Settings > NordVPN > set up nordvpn manually**
 
 
