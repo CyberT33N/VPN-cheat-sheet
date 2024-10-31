@@ -171,6 +171,9 @@ ____________________________________________________________
 
 ## openvpn (https://support.nordvpn.com/Connectivity/Linux/1047409422/How-can-I-connect-to-NordVPN-using-Linux-Terminal.htm)
 
+**In order to use OpenVPN with NordVPN server make sure to get service credentials by login in to nordvpn.com > Settings > NordVPN > set up nordvpn manually**
+
+
 1. Disbale IPV6
 ```bash
 sudo gedit /etc/sysctl.conf
@@ -259,6 +262,7 @@ Choose a server to connect to. For this tutorial, we used us2957.nordvpn.com, bu
 sudo openvpn [file name]
 sudo openvpn us2957.nordvpn.com.udp.ovpn
 sudo openvpn /etc/openvpn/ovpn_udp/us2957.nordvpn.com.udp.ovpn
+sudo openvpn /etc/openvpn/ovpn_udp/za151.nordvpn.com.udp.ovpn
 ```
 
 
@@ -275,13 +279,19 @@ sudo openvpn /etc/openvpn/ovpn_udp/us2957.nordvpn.com.udp.ovpn
 username
 password
 ```
+- **Username and password will not work with nordvpn anymore you must create now service credentials in the settings are of your account**
 
 2. Open up your .ovpn in your favourite text editor and enter the following line:
+- sudo gedit /etc/openvpn/ovpn_udp/ch-nl15.nordvpn.com.udp.ovpn
 ```bash
-auth-user-pass /location/pass.txt
+auth-user-pass /home/userName/Documents/nordvpn.txt
 ```
 - ~ tilde not allowed use absolute path starting with /home/username/..
 
+3. Set chmod
+```shell
+sudo chmod 600 /home/userName/Documents/nordvpn.txt
+```
 
 
 
