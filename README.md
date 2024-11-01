@@ -19,13 +19,18 @@ _____________________________________
 
 # Nordvpn
 
-
+<br><br>
 
 ## API
 - https://sleeplessbeastie.eu/2019/02/18/how-to-use-public-nordvpn-api/
 
 
 
+
+
+
+<br><br>
+<br><br>
 
 
 ## Server
@@ -136,6 +141,7 @@ nordvpn c --group double_vpn
 
 
 
+
 <br><br>
 
 # VPN example
@@ -169,21 +175,32 @@ ua - ukraine
 ____________________________________________________________
 <br><br>
 
-## openvpn (https://support.nordvpn.com/Connectivity/Linux/1047409422/How-can-I-connect-to-NordVPN-using-Linux-Terminal.htm)
+## OpenVPN (https://support.nordvpn.com/Connectivity/Linux/1047409422/How-can-I-connect-to-NordVPN-using-Linux-Terminal.htm)
 
-
-## ufw
-- If you are deny outgoing traffic for default then do this:
-```
-sudo ufw allow out on tun0
-sudo ufw allow out 1194/udp
-```
 
 <br><br>
+
+## ufw
+- Check here for all neded rules (https://github.com/CyberT33N/ufw-cheat-sheet/blob/main/README.md#deny-forward-incoming--outgoing)
+
+
 
 
 ## Step by step Ubuntu
 **In order to use OpenVPN with NordVPN server make sure to get service credentials by login in to nordvpn.com > Settings > NordVPN > set up nordvpn manually**
+
+
+0. The nordvpn linux app will automatically set the dns to the nordvpn servers However, in when you use the openvpn linux client you must ensure to set them by yourself. You can achieve this by doing:
+```
+sudo gedit /etc/resolv.conf
+
+# add
+nameserver 103.86.96.100
+nameserver 103.86.99.100
+
+sudo systemctl restart systemd-resolved
+```
+
 
 
 1. Disbale IPV6
