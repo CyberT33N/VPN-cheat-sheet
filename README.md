@@ -531,6 +531,16 @@ _______________________________________________________________________
 ## Known Problem
 
 
+#### Disconeects on Linux
+- If you get disconnects via linux cli and aswell via the openvpn client with udp then try:
+```
+nordvpn set technology openvpn                                               
+nordvpn set protocol tcp
+```
+  - Now you can connect again via nordvpn cli `nordvpn c ca` or via openvpn tcp `sudo openvpn /etc/openvpn/ovpn_tcp/ch-nl14.nordvpn.com.tcp.ovpn`
+
+
+
 
 <br><br>
 
