@@ -531,7 +531,23 @@ _______________________________________________________________________
 ## Known Problem
 
 
+<br><br>
+
 #### Disconeects on Linux
+
+<br><br>
+
+##### Method #1
+- Connect via .ovpn files instead of the nordvpn CLI. Then reduce the ping to:
+```
+ping 2
+ping-restart 0
+ping-timer-rem
+```
+
+<br><br>
+
+##### Method #2
 - If you get disconnects via linux cli and aswell via the openvpn client with udp then try:
 ```
 nordvpn set technology openvpn                                               
