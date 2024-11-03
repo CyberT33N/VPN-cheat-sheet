@@ -538,11 +538,10 @@ _______________________________________________________________________
 <br><br>
 
 ##### Method #1
-- Connect via .ovpn files instead of the nordvpn CLI. Then reduce the ping to:
+- Connect via .ovpn files instead of the nordvpn CLI. Then reduce the ping & ping-restart to:
 ```
 ping 2
-ping-restart 0
-ping-timer-rem
+ping-restart 2
 ```
 
 <br><br>
