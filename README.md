@@ -8,6 +8,56 @@ VPN Cheat Sheet with the most needed stuff..
 
 
 
+<br><br>
+<br><br>
+_____________________________________
+<br><br>
+<br><br>
+
+# Mega VPN
+
+## Linux
+- https://www.reddit.com/r/MEGA/comments/1fu7dle/mega_vpn_on_linux_cli/?rdt=64718
+
+
+u/SupportMEGA avatar
+SupportMEGA
+•
+3mo ago
+•
+Profile Badge for the Achievement Top 1% Commenter Top 1% Commenter
+
+As of this moment, we do not have a proprietary MEGA VPN client for Linux yet. As general information, it is currently being developed to be released in a not-too-distant future. 
+
+In the meantime, you could generate the VPN credentials, to be used in the WireGuard client for Linux. In order to do that, please refer to the guide below:
+
+    Access https://www.wireguard.com/install/ and download the version that matches with your system.
+    Copy the install command from the site and paste it in your Linux terminal. Note that the system will request your admin password.
+
+    Access your MEGA account through a browser, then navigate to Settings - VPN (or click here https://mega.nz/fm/account/vpn).
+    On the credential section, select the country you want to connect and click on 'Generate VPN credentials'.
+    The system will create a QR code with a download button, please download the credential.
+
+    On your Linux system, open /etc and open the Wireguard folder (note that this is a system folder, therefore, it will be necessary to enter your administrator credentials).
+    Copy the VPN file from the location you downloaded it and paste it in the Wireguard folder.
+    Note that we recommend you rename the file name to one that you will easily identify. I.e. Spain if you create a credential to connect to Spain.
+
+    Open your terminal and execute the command sudo wg-quick up 'vpn filename'
+    This will connect your VPN.
+    Note: 'vpn filename' has to be introduced without apostrophes ('), and without the extension file name. E.g., to use 'Spain.conf' file, please introduce 'wg-quick up Spain'
+
+    If during the connection attempt the system returns with an error /usr/bin/wg-quick: line 32: resolvconf: command not found then it means that your system will need an additional package for the VPN.
+    Simply execute sudo apt install openresolv to install the missing package.
+
+    Once installed, please execute the connection command again.
+
+    To disconnect the VPN, simply execute sudo wg-quick down 'vpn filename'
+    ^TT
+
+
+
+
+
 
 
 
