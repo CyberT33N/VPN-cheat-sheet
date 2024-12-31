@@ -5,6 +5,71 @@ VPN Cheat Sheet with the most needed stuff..
 
 
 
+<br><br>
+<br><br>
+_____________________________________
+<br><br>
+<br><br>
+
+
+# Proton VPN
+
+
+
+## Install
+- https://protonvpn.com/support/official-linux-vpn-debian/
+
+### Ubuntu
+```
+cd ~/Downloads
+wget https://repo.protonvpn.com/debian/dists/stable/main/binary-all/protonvpn-stable-release_1.0.6_all.deb
+sudo dpkg -i ./protonvpn-stable-release_1.0.6_all.deb && sudo apt update
+sudo apt install proton-vpn-gnome-desktop
+sudo apt install libayatana-appindicator3-1 gir1.2-ayatanaappindicator3-0.1 gnome-shell-extension-appindicator
+```
+
+
+## Deinstall
+
+### Ubuntu
+```
+sudo apt purge "protonvpn*" proton-vpn-gnome-desktop && sudo apt autoremove
+```
+
+
+
+## FAQ
+
+### How to disable the kill switch if you have uninstalled the app
+You can easily turn off the kill switch inside our Linux app, but this isn’t possible if you”ve already uninstalled it. In this case, you can remove the kill switch and restore access to the internet as follows:
+
+a) Identify the Proton VPN connection name with the command:
+```shell
+nmcli connection show --active
+```
+
+his will show a list of your system’s active connections.
+
+b) Look for any connections that begin with prefix pvpn- This usually includes pvpn-killswitch and pvpn-ipv6leak-protection, and may include pvpn-routed-killswitch. Delete all these connections using the following command:
+
+```shell
+nmcli connection delete [connection name]
+```
+
+For example:
+```shell
+nmcli connection delete pvpn-killswitch
+```
+
+c) Re-run the following command to check that all Proton VPN connections have been removed:
+```shell
+nmcli connection show --active
+```
+
+If you see any Proton VPN connections left, delete them as described above.
+
+
+
 
 
 
