@@ -27,7 +27,20 @@ _____________________________________
 ## Install
 - https://protonvpn.com/support/official-linux-vpn-debian/
 
-### Ubuntu
+
+
+### OpenVPN
+
+
+
+<br><br>
+<br><br>
+
+### GUI
+
+<br><br>
+
+#### Ubuntu
 ```
 cd ~/Downloads
 wget https://repo.protonvpn.com/debian/dists/stable/main/binary-all/protonvpn-stable-release_1.0.6_all.deb
@@ -37,7 +50,17 @@ sudo apt install libayatana-appindicator3-1 gir1.2-ayatanaappindicator3-0.1 gnom
 ```
 
 
+
+
+
+
+
+<br><br>
+<br><br>
+
 ## Deinstall
+
+<br><br>
 
 ### Ubuntu
 ```
@@ -46,9 +69,18 @@ sudo apt purge "protonvpn*" proton-vpn-gnome-desktop && sudo apt autoremove
 
 
 
+
+<br><br>
+<br><br>
+
 ## FAQ
 
+<br><br>
+
 ### How to disable the kill switch if you have uninstalled the app
+
+<details><summary>Click to expand..</summary>
+
 You can easily turn off the kill switch inside our Linux app, but this isn’t possible if you”ve already uninstalled it. In this case, you can remove the kill switch and restore access to the internet as follows:
 
 a) Identify the Proton VPN connection name with the command:
@@ -75,6 +107,39 @@ nmcli connection show --active
 ```
 
 If you see any Proton VPN connections left, delete them as described above.
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
