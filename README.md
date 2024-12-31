@@ -34,6 +34,7 @@ _____________________________________
 <br><br>
 
 
+
 ## Install
 - https://protonvpn.com/support/official-linux-vpn-debian/
 - https://protonvpn.com/support/vpn-login/
@@ -71,6 +72,10 @@ sudo wg
 
 You can also visit ip.me to confirm that everything is working correctly.
 
+You can disconnect with:
+```
+sudo wg-quick down main_os-CH-AT-1
+```
 
 
 
