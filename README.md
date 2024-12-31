@@ -14,6 +14,14 @@ _____________________________________
 
 # Proton VPN
 
+## Server
+
+- https://account.proton.me/u/1/vpn/OpenVpnIKEv2
+
+
+
+<br><br>
+<br><br>
 
 
 ## Install
