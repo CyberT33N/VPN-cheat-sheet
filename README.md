@@ -26,7 +26,7 @@ _____________________________________
 
 ## Install
 - https://protonvpn.com/support/official-linux-vpn-debian/
-
+- https://protonvpn.com/support/vpn-login/
 
 
 ### OpenVPN
