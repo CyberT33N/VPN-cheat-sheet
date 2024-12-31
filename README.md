@@ -17,10 +17,16 @@ _____________________________________
 
 
 
+
 <br><br>
 
 ## Server
 - https://account.proton.me/u/1/vpn/OpenVpnIKEv2
+
+
+
+
+
 
 
 
@@ -32,6 +38,45 @@ _____________________________________
 - https://protonvpn.com/support/official-linux-vpn-debian/
 - https://protonvpn.com/support/vpn-login/
 
+
+
+
+
+### Wireguard
+- https://protonvpn.com/support/wireguard-linux?srsltid=AfmBOopBQjZC5GQ7iHGk2_W5oV9xC9oNZQj6viHQfsywS1LcfSnOXY5-
+
+1. Install wireguard
+```shell
+sudo apt install wireguard
+```
+
+2. Sign in to account.protonvpn.com, go to Downloads → WireGuard configuration, and download a WireGuard configuration file. Note that WireGuard can be picky about the length of .conf names, so please ensure the the downloaded .conf file name is under 15 characters (you may need to rename the default suggested name to achieve this). 
+
+3. Move the downloaded .conf configuration file to the /etc/wireguard/ directory.
+```shell
+sudo cp /home/UsernameHere/Documents/vpn/protonvpn/wireguard/udp/main_os-CH-AT-1.conf /etc/wireguard/main_os-CH-AT-1.conf
+sudo ls /etc/wireguard
+```
+
+4. Connect
+```shell
+sudo wg-quick up main_os-CH-AT-1
+```
+
+Your privacy is now protected by Proton VPN! To verify that the connection is running, enter:
+```shell
+sudo wg
+```
+
+
+You can also visit ip.me to confirm that everything is working correctly.
+
+
+
+
+
+<br><br>
+<br><br>
 
 ### OpenVPN
 
