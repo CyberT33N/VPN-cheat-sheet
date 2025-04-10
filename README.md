@@ -21,6 +21,11 @@ _____________________________________
 <br><br>
 
 ## Server
+
+### WireGuard
+- https://account.proton.me/u/1/vpn/WireGuard
+
+### OpenVPN
 - https://account.proton.me/u/1/vpn/OpenVpnIKEv2
 
 
